@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
 	def create
 		User.create(user_params)
+		binding.pry
 		redirect_to root_path
 	end
 
